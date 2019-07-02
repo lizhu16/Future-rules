@@ -1,1 +1,1 @@
-# feture-rules
+# future-rules
