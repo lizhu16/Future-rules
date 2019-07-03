@@ -1,6 +1,7 @@
 1.命名
 + 使用驼峰命名方式
 + boolean 类型的变量使用 is 或 has 开头
++ 
 **推荐**
 ``` javascript
 let isReady = false;
@@ -9,6 +10,7 @@ let hasMoreCommands = false;
 
 2.操作符的空格
 + 操作符前后都需要添加空格
++ 
 **推荐**
 ``` javascript
 var sum = 1 + 2
