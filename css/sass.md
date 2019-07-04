@@ -1,6 +1,8 @@
-1.SCSS文件内全部遵循CSS注释规范
+## 1.SCSS注释
 
-2.嵌套规范
+SCSS文件内全部遵循CSS注释规范
+
+## 2.嵌套规范
 
   --用到嵌套选择器，把它们放到最后，嵌套选择器之间要加上空白，相邻嵌套选择器之间也要加上空白。嵌套选择器中的内容也要遵循上述指引。
 
@@ -17,7 +19,8 @@
     
 }
 ```
-3.变量
+
+## 3.变量
 
 可复用属性尽量抽离为页面变量，易于统一维护
 ``` scss
@@ -28,12 +31,12 @@ $color: red;
 }
 ```
 
-4.混合(mixin)
+## 4.混合(mixin)
 
 根据功能定义模块，然后在需要使用的地方通过 @include 调用，避免编码时重复输入代码段
 
 
-5.占位选择器 %
+## 5.占位选择器 %
 
 如果不调用则不会有任何多余的 css 文件，占位选择器以 % 标识定义，通过 @extend 调用
 ``` scss
@@ -46,7 +49,7 @@ $color: red;
 }
 ``` 
 
-6.extend 继承
+## 6.extend 继承
 ``` scss
 // SCSS
 .jdc_1 {
@@ -71,7 +74,9 @@ $color: red;
     font-weight: bold;
 }
 ```
-7.for循环
+
+## 7.for循环
+
 ``` scss
 @for $i from 1 through 3 {
     .jdc_#{$i} {
@@ -79,7 +84,9 @@ $color: red;
     }
 }
 ```
-8.each循环
+
+## 8.each循环
+
 ``` scss
 // CSS
 .jdc_list {
@@ -116,7 +123,8 @@ $color: red;
 }
 ``` 
 
-9.function函数
+## 9.function函数
+
 ``` scss
 @function pxToRem($px) {
     @return $px / 10px * 1rem;
@@ -127,7 +135,7 @@ $color: red;
 ```
 
 
-10.运算规范
+## 10.运算规范
 
 运算符之间空出一个空格
 ``` scss

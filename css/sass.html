@@ -398,8 +398,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>1.SCSS&#x6587;&#x4EF6;&#x5185;&#x5168;&#x90E8;&#x9075;&#x5FAA;CSS&#x6CE8;&#x91CA;&#x89C4;&#x8303;</p>
-<p>2.&#x5D4C;&#x5957;&#x89C4;&#x8303;</p>
+                                <h2 id="1scss&#x6CE8;&#x91CA;">1.SCSS&#x6CE8;&#x91CA;</h2>
+<p>SCSS&#x6587;&#x4EF6;&#x5185;&#x5168;&#x90E8;&#x9075;&#x5FAA;CSS&#x6CE8;&#x91CA;&#x89C4;&#x8303;</p>
+<h2 id="2&#x5D4C;&#x5957;&#x89C4;&#x8303;">2.&#x5D4C;&#x5957;&#x89C4;&#x8303;</h2>
 <p>  --&#x7528;&#x5230;&#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x628A;&#x5B83;&#x4EEC;&#x653E;&#x5230;&#x6700;&#x540E;&#xFF0C;&#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x95F4;&#x8981;&#x52A0;&#x4E0A;&#x7A7A;&#x767D;&#xFF0C;&#x76F8;&#x90BB;&#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x95F4;&#x4E5F;&#x8981;&#x52A0;&#x4E0A;&#x7A7A;&#x767D;&#x3002;&#x5D4C;&#x5957;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4E5F;&#x8981;&#x9075;&#x5FAA;&#x4E0A;&#x8FF0;&#x6307;&#x5F15;&#x3002;</p>
 <p><strong>&#x63A8;&#x8350;</strong></p>
 <pre><code class="lang-scss"><span class="hljs-selector-class">.btn</span> {
@@ -412,7 +413,7 @@
 
 }
 </code></pre>
-<p>3.&#x53D8;&#x91CF;</p>
+<h2 id="3&#x53D8;&#x91CF;">3.&#x53D8;&#x91CF;</h2>
 <p>&#x53EF;&#x590D;&#x7528;&#x5C5E;&#x6027;&#x5C3D;&#x91CF;&#x62BD;&#x79BB;&#x4E3A;&#x9875;&#x9762;&#x53D8;&#x91CF;&#xFF0C;&#x6613;&#x4E8E;&#x7EDF;&#x4E00;&#x7EF4;&#x62A4;</p>
 <pre><code class="lang-scss"><span class="hljs-variable">$color</span>: red;
 <span class="hljs-selector-class">.jdc</span> {
@@ -420,9 +421,9 @@
     <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$color</span>;
 }
 </code></pre>
-<p>4.&#x6DF7;&#x5408;(mixin)</p>
+<h2 id="4&#x6DF7;&#x5408;mixin">4.&#x6DF7;&#x5408;(mixin)</h2>
 <p>&#x6839;&#x636E;&#x529F;&#x80FD;&#x5B9A;&#x4E49;&#x6A21;&#x5757;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x5730;&#x65B9;&#x901A;&#x8FC7; @include &#x8C03;&#x7528;&#xFF0C;&#x907F;&#x514D;&#x7F16;&#x7801;&#x65F6;&#x91CD;&#x590D;&#x8F93;&#x5165;&#x4EE3;&#x7801;&#x6BB5;</p>
-<p>5.&#x5360;&#x4F4D;&#x9009;&#x62E9;&#x5668; %</p>
+<h2 id="5&#x5360;&#x4F4D;&#x9009;&#x62E9;&#x5668;-">5.&#x5360;&#x4F4D;&#x9009;&#x62E9;&#x5668; %</h2>
 <p>&#x5982;&#x679C;&#x4E0D;&#x8C03;&#x7528;&#x5219;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x591A;&#x4F59;&#x7684; css &#x6587;&#x4EF6;&#xFF0C;&#x5360;&#x4F4D;&#x9009;&#x62E9;&#x5668;&#x4EE5; % &#x6807;&#x8BC6;&#x5B9A;&#x4E49;&#xFF0C;&#x901A;&#x8FC7; @extend &#x8C03;&#x7528;</p>
 <pre><code class="lang-scss">%borderbox {
     -webkit-<span class="hljs-attribute">box-sizing</span>: border-box;
@@ -432,7 +433,7 @@
     @<span class="hljs-keyword">extend</span> %borderbox;
 }
 </code></pre>
-<p>6.extend &#x7EE7;&#x627F;</p>
+<h2 id="6extend-&#x7EE7;&#x627F;">6.extend &#x7EE7;&#x627F;</h2>
 <pre><code class="lang-scss"><span class="hljs-comment">// SCSS</span>
 <span class="hljs-selector-class">.jdc_1</span> {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
@@ -456,14 +457,14 @@
     <span class="hljs-attribute">font-weight</span>: bold;
 }
 </code></pre>
-<p>7.for&#x5FAA;&#x73AF;</p>
+<h2 id="7for&#x5FAA;&#x73AF;">7.for&#x5FAA;&#x73AF;</h2>
 <pre><code class="lang-scss">@<span class="hljs-keyword">for</span> <span class="hljs-variable">$i</span> from 1 through 3 {
     <span class="hljs-selector-class">.jdc_</span>#{<span class="hljs-variable">$i</span>} {
         <span class="hljs-attribute">background-position</span>: <span class="hljs-number">0</span> (-<span class="hljs-number">20px</span>) * <span class="hljs-variable">$i</span>;
     }
 }
 </code></pre>
-<p>8.each&#x5FAA;&#x73AF;</p>
+<h2 id="8each&#x5FAA;&#x73AF;">8.each&#x5FAA;&#x73AF;</h2>
 <pre><code class="lang-scss"><span class="hljs-comment">// CSS</span>
 <span class="hljs-selector-class">.jdc_list</span> {
     <span class="hljs-attribute">background-image</span>: url(/img/jdc_list.png);
@@ -498,7 +499,7 @@
     }
 }
 </code></pre>
-<p>9.function&#x51FD;&#x6570;</p>
+<h2 id="9function&#x51FD;&#x6570;">9.function&#x51FD;&#x6570;</h2>
 <pre><code class="lang-scss">@function pxToRem(<span class="hljs-variable">$px</span>) {
     @return <span class="hljs-variable">$px</span> / 10px * 1rem;
 }
@@ -506,7 +507,7 @@
     <span class="hljs-attribute">font-size</span>: pxToRem(<span class="hljs-number">12px</span>);
 }
 </code></pre>
-<p>10.&#x8FD0;&#x7B97;&#x89C4;&#x8303;</p>
+<h2 id="10&#x8FD0;&#x7B97;&#x89C4;&#x8303;">10.&#x8FD0;&#x7B97;&#x89C4;&#x8303;</h2>
 <p>&#x8FD0;&#x7B97;&#x7B26;&#x4E4B;&#x95F4;&#x7A7A;&#x51FA;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;</p>
 <pre><code class="lang-scss"><span class="hljs-selector-class">.jdc</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span> - <span class="hljs-number">50px</span>;
@@ -561,7 +562,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"sass规范","level":"1.3.3","depth":2,"next":{"title":"JavaScript规范","level":"1.4","depth":1,"path":"js/README.md","ref":"js/README.md","articles":[{"title":"语言规范","level":"1.4.1","depth":2,"path":"js/language.md","ref":"js/language.md","articles":[]},{"title":"代码规范","level":"1.4.2","depth":2,"path":"js/code.md","ref":"js/code.md","articles":[]},{"title":"注释规范","level":"1.4.3","depth":2,"path":"js/notes.md","ref":"js/notes.md","articles":[]}]},"previous":{"title":"注释规范","level":"1.3.2","depth":2,"path":"css/notes.md","ref":"css/notes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css/sass.md","mtime":"2019-07-03T05:36:33.185Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T08:19:58.385Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"sass规范","level":"1.3.3","depth":2,"next":{"title":"JavaScript规范","level":"1.4","depth":1,"path":"js/README.md","ref":"js/README.md","articles":[{"title":"语言规范","level":"1.4.1","depth":2,"path":"js/language.md","ref":"js/language.md","articles":[]},{"title":"代码规范","level":"1.4.2","depth":2,"path":"js/code.md","ref":"js/code.md","articles":[]},{"title":"注释规范","level":"1.4.3","depth":2,"path":"js/notes.md","ref":"js/notes.md","articles":[]}]},"previous":{"title":"注释规范","level":"1.3.2","depth":2,"path":"css/notes.md","ref":"css/notes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css/sass.md","mtime":"2019-07-04T08:35:04.048Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T08:42:19.523Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
