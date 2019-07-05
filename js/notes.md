@@ -18,7 +18,7 @@
  * 功能详细描述
  * @create author 作者
  * @create time 创建时间
- * @update time 修改时间 (如定版后多此修改则连续追加日期 2017/05/05 xx:xx, 2017/08/09 xx:xx)
+ * @update time 修改时间 (2017/08/09 xx:xx)
  * @param <String> arg1 参数1
  * @param <Number> arg2 参数2
  * @return <Boolean> 返回值
@@ -37,7 +37,7 @@
  * @file index.js
  * @create author 创建者
  * @create time 创建时间
- * @update time 修改时间 (如定版后多此修改则连续追加日期 2017/05/05 xx:xx, 2017/08/09 xx:xx)
+ * @update time 修改时间 (2017/08/09 xx:xx)
  */
 
  ```

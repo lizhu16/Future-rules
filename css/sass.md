@@ -140,10 +140,10 @@ $color: red;
 运算符之间空出一个空格
 ``` scss
 .jdc {
-    width: 100px - 50px;
-    width: 100px + 50px;
-    width: 100px * 2;
-    width: 100px / 2;
+    width: calc(100px - 50px);
+    width: calc(100px + 50px);
+    width: calc(100px * 2);
+    width: calc(100px / 2);
 }
 ```
 
